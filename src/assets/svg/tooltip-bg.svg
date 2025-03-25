@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="206px" height="163px" viewBox="0 0 206 163" version="1.1" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Rectangle 2</title>
+  <g id="Framework" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g transform="translate(-1280, -75)" fill="var(--appBabyBlue)" id="Rectangle-2">
+      <path
+        d="M1284,233.766234 C1281.79086,233.766234 1280,231.975373 1280,229.766234 L1280,79 C1280,76.790861 1281.79086,75 1284,75 L1482,75 C1484.20914,75 1486,76.790861 1486,79 L1486,229.766234 C1486,231.975373 1484.20914,233.766234 1482,233.766234 L1384.03,233.766234 L1380.425,238 L1376.82,233.766234 L1284,233.766234 Z">
+      </path>
+    </g>
+  </g>
+</svg>

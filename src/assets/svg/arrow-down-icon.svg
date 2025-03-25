@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg width="100%" height="100%" viewBox="0 0 11 7.7" version="1.1" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g id="Framework" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g transform="translate(-383, -378)" fill="var(--appSpaceBlack)" id="Group-A">
+      <g transform="translate(170, 208)">
+        <g id="Components" transform="translate(0, 61)">
+          <g id="2" transform="translate(14, 60)">
+            <g id="Regular" transform="translate(0, 31)">
+              <polygon id="Triangle" transform="translate(204.5, 21.85) rotate(180) translate(-204.5, -21.85)"
+                points="204.5 18 210 25.7 199 25.7"></polygon>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,4484 @@
+@use '_base.layer.scss';
+
+*,
+::before,
+::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+/*
+! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  /* 3 */
+  tab-size: 4;
+  /* 3 */
+  font-family:
+    ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
+  /* 1 */
+  font-feature-settings: normal;
+  /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role='button'] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden]:where(:not([hidden='until-found'])) {
+  display: none;
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1264px) {
+  .container {
+    max-width: 1264px;
+  }
+}
+
+@media (min-width: 1904px) {
+  .container {
+    max-width: 1904px;
+  }
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.\!fixed {
+  position: fixed !important;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.-inset-3\.5 {
+  inset: -0.875rem;
+}
+
+.inset-0 {
+  inset: 0px;
+}
+
+.inset-y-0 {
+  top: 0px;
+  bottom: 0px;
+}
+
+.-bottom-0\.5 {
+  bottom: -0.125rem;
+}
+
+.-left-1 {
+  left: -0.25rem;
+}
+
+.-left-5 {
+  left: -1.25rem;
+}
+
+.-left-\[13px\] {
+  left: -13px;
+}
+
+.-left-\[94px\] {
+  left: -94px;
+}
+
+.-right-0\.5 {
+  right: -0.125rem;
+}
+
+.-right-1 {
+  right: -0.25rem;
+}
+
+.-right-1\.5 {
+  right: -0.375rem;
+}
+
+.-top-\[163px\] {
+  top: -163px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.left-1\/2 {
+  left: 50%;
+}
+
+.left-2 {
+  left: 0.5rem;
+}
+
+.left-3\.5 {
+  left: 0.875rem;
+}
+
+.left-\[15px\] {
+  left: 15px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.right-2\.5 {
+  right: 0.625rem;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-1 {
+  top: 0.25rem;
+}
+
+.top-1\/2 {
+  top: 50%;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.top-\[123px\] {
+  top: 123px;
+}
+
+.top-\[159px\] {
+  top: 159px;
+}
+
+.top-\[219px\] {
+  top: 219px;
+}
+
+.top-\[39px\] {
+  top: 39px;
+}
+
+.top-\[55px\] {
+  top: 55px;
+}
+
+.top-\[70px\] {
+  top: 70px;
+}
+
+.top-\[99px\] {
+  top: 99px;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.z-\[1\] {
+  z-index: 1;
+}
+
+.z-\[2\] {
+  z-index: 2;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.-mr-\[13px\] {
+  margin-right: -13px;
+}
+
+.mb-1\.5 {
+  margin-bottom: 0.375rem;
+}
+
+.mb-\[22px\] {
+  margin-bottom: 22px;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.ml-\[1\.5px\] {
+  margin-left: 1.5px;
+}
+
+.ml-\[7\.89px\] {
+  margin-left: 7.89px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.ml-px {
+  margin-left: 1px;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.mr-\[13px\] {
+  margin-right: 13px;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-\[3px\] {
+  margin-top: 3px;
+}
+
+.mt-\[9px\] {
+  margin-top: 9px;
+}
+
+.mt-px {
+  margin-top: 1px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.hidden {
+  display: none;
+}
+
+.\!h-\[15px\] {
+  height: 15px !important;
+}
+
+.h-0\.5 {
+  height: 0.125rem;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-2\.5 {
+  height: 0.625rem;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-9 {
+  height: 2.25rem;
+}
+
+.h-\[1\.87px\] {
+  height: 1.87px;
+}
+
+.h-\[10\.67px\] {
+  height: 10.67px;
+}
+
+.h-\[13px\] {
+  height: 13px;
+}
+
+.h-\[15px\] {
+  height: 15px;
+}
+
+.h-\[19px\] {
+  height: 19px;
+}
+
+.h-\[210px\] {
+  height: 210px;
+}
+
+.h-\[213px\] {
+  height: 213px;
+}
+
+.h-\[21px\] {
+  height: 21px;
+}
+
+.h-\[23px\] {
+  height: 23px;
+}
+
+.h-\[25px\] {
+  height: 25px;
+}
+
+.h-\[29px\] {
+  height: 29px;
+}
+
+.h-\[30px\] {
+  height: 30px;
+}
+
+.h-\[336px\] {
+  height: 336px;
+}
+
+.h-\[35px\] {
+  height: 35px;
+}
+
+.h-\[44px\] {
+  height: 44px;
+}
+
+.h-\[5\.6px\] {
+  height: 5.6px;
+}
+
+.h-\[5\.71px\] {
+  height: 5.71px;
+}
+
+.h-\[506px\] {
+  height: 506px;
+}
+
+.h-\[50px\] {
+  height: 50px;
+}
+
+.h-\[7\.7px\] {
+  height: 7.7px;
+}
+
+.h-\[7px\] {
+  height: 7px;
+}
+
+.h-\[9px\] {
+  height: 9px;
+}
+
+.h-fit {
+  height: fit-content;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-\[calc\(100\%_\/_2_-_3px\)\] {
+  height: calc(100% / 2 - 3px);
+}
+
+.h-1\/2 {
+  height: 50%;
+}
+
+.max-h-32 {
+  max-height: 8rem;
+}
+
+.max-h-\[210px\] {
+  max-height: 210px;
+}
+
+.max-h-\[420px\] {
+  max-height: 420px;
+}
+
+.max-h-\[470px\] {
+  max-height: 470px;
+}
+
+.max-h-\[calc\(100vh_-_276px\)\] {
+  max-height: calc(100vh - 276px);
+}
+
+.max-h-\[calc\(210px_-_45px\)\] {
+  max-height: calc(210px - 45px);
+}
+
+.max-h-screen {
+  max-height: 100vh;
+}
+
+.min-h-\[31px\] {
+  min-height: 31px;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.\!w-\[15px\] {
+  width: 15px !important;
+}
+
+.\!w-\[22px\] {
+  width: 22px !important;
+}
+
+.\!w-full {
+  width: 100% !important;
+}
+
+.w-1\.5 {
+  width: 0.375rem;
+}
+
+.w-14 {
+  width: 3.5rem;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-2\.5 {
+  width: 0.625rem;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-3\.5 {
+  width: 0.875rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-9 {
+  width: 2.25rem;
+}
+
+.w-\[10\.67px\] {
+  width: 10.67px;
+}
+
+.w-\[11px\] {
+  width: 11px;
+}
+
+.w-\[141px\] {
+  width: 141px;
+}
+
+.w-\[152px\] {
+  width: 152px;
+}
+
+.w-\[15px\] {
+  width: 15px;
+}
+
+.w-\[162px\] {
+  width: 162px;
+}
+
+.w-\[19px\] {
+  width: 19px;
+}
+
+.w-\[201px\] {
+  width: 201px;
+}
+
+.w-\[203px\] {
+  width: 203px;
+}
+
+.w-\[219px\] {
+  width: 219px;
+}
+
+.w-\[21px\] {
+  width: 21px;
+}
+
+.w-\[22px\] {
+  width: 22px;
+}
+
+.w-\[24px\] {
+  width: 24px;
+}
+
+.w-\[250px\] {
+  width: 250px;
+}
+
+.w-\[25px\] {
+  width: 25px;
+}
+
+.w-\[30px\] {
+  width: 30px;
+}
+
+.w-\[35px\] {
+  width: 35px;
+}
+
+.w-\[395px\] {
+  width: 395px;
+}
+
+.w-\[439px\] {
+  width: 439px;
+}
+
+.w-\[495px\] {
+  width: 495px;
+}
+
+.w-\[5\.71px\] {
+  width: 5.71px;
+}
+
+.w-\[57px\] {
+  width: 57px;
+}
+
+.w-\[595px\] {
+  width: 595px;
+}
+
+.w-\[66px\] {
+  width: 66px;
+}
+
+.w-\[70px\] {
+  width: 70px;
+}
+
+.w-\[769px\] {
+  width: 769px;
+}
+
+.w-\[7px\] {
+  width: 7px;
+}
+
+.w-\[82px\] {
+  width: 82px;
+}
+
+.w-\[86px\] {
+  width: 86px;
+}
+
+.w-\[9\.55px\] {
+  width: 9.55px;
+}
+
+.w-\[94px\] {
+  width: 94px;
+}
+
+.w-\[99px\] {
+  width: 99px;
+}
+
+.w-\[9px\] {
+  width: 9px;
+}
+
+.w-\[calc\(100\%_-_8px\)\] {
+  width: calc(100% - 8px);
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-max {
+  width: max-content;
+}
+
+.w-\[3px\] {
+  width: 3px;
+}
+
+.min-w-16 {
+  min-width: 4rem;
+}
+
+.\!max-w-\[1139px\] {
+  max-width: 1139px !important;
+}
+
+.max-w-\[1346px\] {
+  max-width: 1346px;
+}
+
+.max-w-\[185px\] {
+  max-width: 185px;
+}
+
+.max-w-\[745px\] {
+  max-width: 745px;
+}
+
+.max-w-\[calc\(100\%_-_21px\)\] {
+  max-width: calc(100% - 21px);
+}
+
+.max-w-\[calc\(100\%_-_36px\)\] {
+  max-width: calc(100% - 36px);
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-180 {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-no-drop {
+  cursor: no-drop;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-text {
+  cursor: text;
+}
+
+.select-none {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.appearance-none {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.grid-cols-\[1\.25fr_1fr\] {
+  grid-template-columns: 1.25fr 1fr;
+}
+
+.grid-cols-\[1\.5fr_repeat\(5\2c _1fr\)\] {
+  grid-template-columns: 1.5fr repeat(5, 1fr);
+}
+
+.grid-cols-\[140px_repeat\(5\2c _1fr\)\] {
+  grid-template-columns: 140px repeat(5, 1fr);
+}
+
+.grid-cols-\[1fr_356px\] {
+  grid-template-columns: 1fr 356px;
+}
+
+.grid-cols-\[1fr_auto\] {
+  grid-template-columns: 1fr auto;
+}
+
+.grid-cols-\[1fr_auto_1fr\] {
+  grid-template-columns: 1fr auto 1fr;
+}
+
+.grid-cols-\[273px_1fr\] {
+  grid-template-columns: 273px 1fr;
+}
+
+.grid-cols-\[2fr_repeat\(5\2c _1fr\)\] {
+  grid-template-columns: 2fr repeat(5, 1fr);
+}
+
+.grid-cols-\[514px_1fr\] {
+  grid-template-columns: 514px 1fr;
+}
+
+.grid-cols-\[auto_1fr\] {
+  grid-template-columns: auto 1fr;
+}
+
+.grid-cols-\[auto_1fr_auto\] {
+  grid-template-columns: auto 1fr auto;
+}
+
+.grid-cols-\[repeat\(2\2c _auto\)\] {
+  grid-template-columns: repeat(2, auto);
+}
+
+.grid-cols-\[repeat\(3\2c auto\)\] {
+  grid-template-columns: repeat(3, auto);
+}
+
+.grid-cols-\[repeat\(4\2c _1fr\)_100px\] {
+  grid-template-columns: repeat(4, 1fr) 100px;
+}
+
+.grid-cols-\[repeat\(6\2c _1fr\)\2c _24px\] {
+  grid-template-columns: repeat(6, 1fr) 24px;
+}
+
+.grid-cols-\[16px_1fr\] {
+  grid-template-columns: 16px 1fr;
+}
+
+.grid-cols-\[16px_1fr_auto\] {
+  grid-template-columns: 16px 1fr auto;
+}
+
+.grid-rows-\[1fr_auto_1fr\] {
+  grid-template-rows: 1fr auto 1fr;
+}
+
+.grid-rows-\[1\.1fr_auto_1\.1fr\] {
+  grid-template-rows: 1.1fr auto 1.1fr;
+}
+
+.grid-rows-\[calc\(100\%_\/_2_-_3px\)_auto_calc\(100\%_\/_2_-_3px\)\] {
+  grid-template-rows: calc(100% / 2 - 3px) auto calc(100% / 2 - 3px);
+}
+
+.place-items-center {
+  place-items: center;
+}
+
+.content-center {
+  align-content: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-baseline {
+  align-items: baseline;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.\!gap-0 {
+  gap: 0px !important;
+}
+
+.\!gap-1 {
+  gap: 0.25rem !important;
+}
+
+.\!gap-2 {
+  gap: 0.5rem !important;
+}
+
+.gap-0\.5 {
+  gap: 0.125rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-1\.5 {
+  gap: 0.375rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-2\.5 {
+  gap: 0.625rem;
+}
+
+.gap-20 {
+  gap: 5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-3\.5 {
+  gap: 0.875rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-\[109px\] {
+  gap: 109px;
+}
+
+.gap-\[11px\] {
+  gap: 11px;
+}
+
+.gap-\[13px\] {
+  gap: 13px;
+}
+
+.gap-\[15px\] {
+  gap: 15px;
+}
+
+.gap-\[21px\] {
+  gap: 21px;
+}
+
+.gap-\[24px\] {
+  gap: 24px;
+}
+
+.gap-\[27px\] {
+  gap: 27px;
+}
+
+.gap-\[2px\] {
+  gap: 2px;
+}
+
+.gap-\[3px\] {
+  gap: 3px;
+}
+
+.gap-\[5px\] {
+  gap: 5px;
+}
+
+.gap-\[7px\] {
+  gap: 7px;
+}
+
+.gap-px {
+  gap: 1px;
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.self-stretch {
+  align-self: stretch;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
+}
+
+.break-all {
+  word-break: break-all;
+}
+
+.\!rounded-\[14px\] {
+  border-radius: 14px !important;
+}
+
+.\!rounded-\[4px\] {
+  border-radius: 4px !important;
+}
+
+.\!rounded-full {
+  border-radius: 9999px !important;
+}
+
+.\!rounded-lg {
+  border-radius: 0.5rem !important;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-\[13px\] {
+  border-radius: 13px;
+}
+
+.rounded-\[14px\] {
+  border-radius: 14px;
+}
+
+.rounded-\[18px\] {
+  border-radius: 18px;
+}
+
+.rounded-\[3px\] {
+  border-radius: 3px;
+}
+
+.rounded-\[4px\] {
+  border-radius: 4px;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-b-lg {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.rounded-l-3xl {
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.rounded-l-md {
+  border-top-left-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+
+.rounded-l-none {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.rounded-r-3xl {
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.rounded-r-md {
+  border-top-right-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+}
+
+.rounded-r-none {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.rounded-t-\[20\.5px\] {
+  border-top-left-radius: 20.5px;
+  border-top-right-radius: 20.5px;
+}
+
+.rounded-bl-\[13px\] {
+  border-bottom-left-radius: 13px;
+}
+
+.rounded-bl-lg {
+  border-bottom-left-radius: 0.5rem;
+}
+
+.rounded-br-\[13px\] {
+  border-bottom-right-radius: 13px;
+}
+
+.rounded-br-lg {
+  border-bottom-right-radius: 0.5rem;
+}
+
+.rounded-tl-\[13px\] {
+  border-top-left-radius: 13px;
+}
+
+.rounded-tl-lg {
+  border-top-left-radius: 0.5rem;
+}
+
+.rounded-tr-\[13px\] {
+  border-top-right-radius: 13px;
+}
+
+.rounded-tr-lg {
+  border-top-right-radius: 0.5rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-l {
+  border-left-width: 1px;
+}
+
+.border-r {
+  border-right-width: 1px;
+}
+
+.\!border-app-baby-blue {
+  border-color: var(--appBabyBlue) !important;
+}
+
+.\!border-app-charcoal-gray {
+  border-color: var(--appCharcoalGray) !important;
+}
+
+.\!border-app-dusty-blue {
+  border-color: var(--appDustyBlue) !important;
+}
+
+.\!border-app-dusty-green {
+  border-color: var(--appDustyGreen) !important;
+}
+
+.\!border-app-dusty-rose {
+  border-color: var(--appDustyRose) !important;
+}
+
+.\!border-app-github {
+  border-color: var(--appGithub) !important;
+}
+
+.\!border-app-gray {
+  border-color: var(--appGray) !important;
+}
+
+.\!border-app-gray-light {
+  border-color: var(--appGrayLight) !important;
+}
+
+.\!border-app-green-light {
+  border-color: var(--appGreenLight) !important;
+}
+
+.\!border-app-medium-gray {
+  border-color: var(--appMediumGray) !important;
+}
+
+.\!border-app-medium-gray-light {
+  border-color: var(--appMediumGrayLight) !important;
+}
+
+.\!border-app-midnight-blue {
+  border-color: var(--appMidnightBlue) !important;
+}
+
+.\!border-app-salmon-pink {
+  border-color: var(--appSalmonPink) !important;
+}
+
+.\!border-app-salmon-pink-dark {
+  border-color: var(--appSalmonPinkDark) !important;
+}
+
+.\!border-app-salmon-pink-light {
+  border-color: var(--appSalmonPinkLight) !important;
+}
+
+.\!border-app-space-black {
+  border-color: var(--appSpaceBlack) !important;
+}
+
+.\!border-app-spring-green {
+  border-color: var(--appSpringGreen) !important;
+}
+
+.\!border-app-spring-green-light {
+  border-color: var(--appSpringGreenLight) !important;
+}
+
+.\!border-app-telegram {
+  border-color: var(--appTelegram) !important;
+}
+
+.\!border-app-white {
+  border-color: var(--appWhite) !important;
+}
+
+.\!border-app-x {
+  border-color: var(--appX) !important;
+}
+
+.\!border-app-yellow {
+  border-color: var(--appYellow) !important;
+}
+
+.border-app-baby-blue {
+  border-color: var(--appBabyBlue);
+}
+
+.border-app-charcoal-gray {
+  border-color: var(--appCharcoalGray);
+}
+
+.border-app-dusty-blue {
+  border-color: var(--appDustyBlue);
+}
+
+.border-app-dusty-green {
+  border-color: var(--appDustyGreen);
+}
+
+.border-app-dusty-rose {
+  border-color: var(--appDustyRose);
+}
+
+.border-app-github {
+  border-color: var(--appGithub);
+}
+
+.border-app-gray {
+  border-color: var(--appGray);
+}
+
+.border-app-gray-light {
+  border-color: var(--appGrayLight);
+}
+
+.border-app-green-light {
+  border-color: var(--appGreenLight);
+}
+
+.border-app-medium-gray {
+  border-color: var(--appMediumGray);
+}
+
+.border-app-medium-gray-light {
+  border-color: var(--appMediumGrayLight);
+}
+
+.border-app-midnight-blue {
+  border-color: var(--appMidnightBlue);
+}
+
+.border-app-salmon-pink {
+  border-color: var(--appSalmonPink);
+}
+
+.border-app-salmon-pink-dark {
+  border-color: var(--appSalmonPinkDark);
+}
+
+.border-app-salmon-pink-light {
+  border-color: var(--appSalmonPinkLight);
+}
+
+.border-app-space-black {
+  border-color: var(--appSpaceBlack);
+}
+
+.border-app-spring-green {
+  border-color: var(--appSpringGreen);
+}
+
+.border-app-spring-green-light {
+  border-color: var(--appSpringGreenLight);
+}
+
+.border-app-telegram {
+  border-color: var(--appTelegram);
+}
+
+.border-app-white {
+  border-color: var(--appWhite);
+}
+
+.border-app-x {
+  border-color: var(--appX);
+}
+
+.border-app-yellow {
+  border-color: var(--appYellow);
+}
+
+.border-transparent {
+  border-color: transparent;
+}
+
+.border-r-app-medium-gray {
+  border-right-color: var(--appMediumGray);
+}
+
+.\!bg-\[\#0000003A\] {
+  background-color: #0000003a !important;
+}
+
+.\!bg-\[\#FFFFFF3A\] {
+  background-color: #ffffff3a !important;
+}
+
+.\!bg-\[\#ffffff3A\] {
+  background-color: #ffffff3a !important;
+}
+
+.\!bg-app-baby-blue {
+  background-color: var(--appBabyBlue) !important;
+}
+
+.\!bg-app-charcoal-gray {
+  background-color: var(--appCharcoalGray) !important;
+}
+
+.\!bg-app-dusty-blue {
+  background-color: var(--appDustyBlue) !important;
+}
+
+.\!bg-app-dusty-green {
+  background-color: var(--appDustyGreen) !important;
+}
+
+.\!bg-app-dusty-rose {
+  background-color: var(--appDustyRose) !important;
+}
+
+.\!bg-app-github {
+  background-color: var(--appGithub) !important;
+}
+
+.\!bg-app-gray {
+  background-color: var(--appGray) !important;
+}
+
+.\!bg-app-gray-light {
+  background-color: var(--appGrayLight) !important;
+}
+
+.\!bg-app-green-light {
+  background-color: var(--appGreenLight) !important;
+}
+
+.\!bg-app-medium-gray {
+  background-color: var(--appMediumGray) !important;
+}
+
+.\!bg-app-medium-gray-light {
+  background-color: var(--appMediumGrayLight) !important;
+}
+
+.\!bg-app-midnight-blue {
+  background-color: var(--appMidnightBlue) !important;
+}
+
+.\!bg-app-salmon-pink {
+  background-color: var(--appSalmonPink) !important;
+}
+
+.\!bg-app-salmon-pink-dark {
+  background-color: var(--appSalmonPinkDark) !important;
+}
+
+.\!bg-app-salmon-pink-light {
+  background-color: var(--appSalmonPinkLight) !important;
+}
+
+.\!bg-app-space-black {
+  background-color: var(--appSpaceBlack) !important;
+}
+
+.\!bg-app-spring-green {
+  background-color: var(--appSpringGreen) !important;
+}
+
+.\!bg-app-spring-green-light {
+  background-color: var(--appSpringGreenLight) !important;
+}
+
+.\!bg-app-telegram {
+  background-color: var(--appTelegram) !important;
+}
+
+.\!bg-app-white {
+  background-color: var(--appWhite) !important;
+}
+
+.\!bg-app-x {
+  background-color: var(--appX) !important;
+}
+
+.\!bg-app-yellow {
+  background-color: var(--appYellow) !important;
+}
+
+.\!bg-transparent {
+  background-color: transparent !important;
+}
+
+.bg-\[\#0000003A\] {
+  background-color: #0000003a;
+}
+
+.bg-\[\#000000CC\] {
+  background-color: #000000cc;
+}
+
+.bg-\[\#0F11163A\] {
+  background-color: #0f11163a;
+}
+
+.bg-\[\#0F111680\] {
+  background-color: #0f111680;
+}
+
+.bg-\[\#1D1E23\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 30 35 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#BFE4EC\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 228 236 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#D3F4A5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(211 244 165 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#F5A5A5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 165 165 / var(--tw-bg-opacity, 1));
+}
+
+.bg-app-baby-blue {
+  background-color: var(--appBabyBlue);
+}
+
+.bg-app-charcoal-gray {
+  background-color: var(--appCharcoalGray);
+}
+
+.bg-app-dusty-blue {
+  background-color: var(--appDustyBlue);
+}
+
+.bg-app-dusty-green {
+  background-color: var(--appDustyGreen);
+}
+
+.bg-app-dusty-rose {
+  background-color: var(--appDustyRose);
+}
+
+.bg-app-github {
+  background-color: var(--appGithub);
+}
+
+.bg-app-gray {
+  background-color: var(--appGray);
+}
+
+.bg-app-gray-light {
+  background-color: var(--appGrayLight);
+}
+
+.bg-app-green-light {
+  background-color: var(--appGreenLight);
+}
+
+.bg-app-medium-gray {
+  background-color: var(--appMediumGray);
+}
+
+.bg-app-medium-gray-light {
+  background-color: var(--appMediumGrayLight);
+}
+
+.bg-app-midnight-blue {
+  background-color: var(--appMidnightBlue);
+}
+
+.bg-app-salmon-pink {
+  background-color: var(--appSalmonPink);
+}
+
+.bg-app-salmon-pink-dark {
+  background-color: var(--appSalmonPinkDark);
+}
+
+.bg-app-salmon-pink-light {
+  background-color: var(--appSalmonPinkLight);
+}
+
+.bg-app-space-black {
+  background-color: var(--appSpaceBlack);
+}
+
+.bg-app-spring-green {
+  background-color: var(--appSpringGreen);
+}
+
+.bg-app-spring-green-light {
+  background-color: var(--appSpringGreenLight);
+}
+
+.bg-app-telegram {
+  background-color: var(--appTelegram);
+}
+
+.bg-app-white {
+  background-color: var(--appWhite);
+}
+
+.bg-app-x {
+  background-color: var(--appX);
+}
+
+.bg-app-yellow {
+  background-color: var(--appYellow);
+}
+
+.bg-black\/70 {
+  background-color: rgb(0 0 0 / 0.7);
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-trade-menu-gradient {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--appSalmonPink),
+    var(--appSpringGreen)
+  );
+}
+
+.fill-app-space-black {
+  fill: var(--appSpaceBlack);
+}
+
+.fill-app-white {
+  fill: var(--appWhite);
+}
+
+.\!p-0 {
+  padding: 0px !important;
+}
+
+.\!p-1 {
+  padding: 0.25rem !important;
+}
+
+.\!p-2 {
+  padding: 0.5rem !important;
+}
+
+.\!p-2\.5 {
+  padding: 0.625rem !important;
+}
+
+.\!p-\[5px\] {
+  padding: 5px !important;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.p-1\.5 {
+  padding: 0.375rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-3\.5 {
+  padding: 0.875rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-\[13px\] {
+  padding: 13px;
+}
+
+.p-\[15px\] {
+  padding: 15px;
+}
+
+.p-\[5px\] {
+  padding: 5px;
+}
+
+.\!px-0 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.\!px-1\.5 {
+  padding-left: 0.375rem !important;
+  padding-right: 0.375rem !important;
+}
+
+.\!px-2\.5 {
+  padding-left: 0.625rem !important;
+  padding-right: 0.625rem !important;
+}
+
+.\!px-\[5px\] {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.\!px-\[9px\] {
+  padding-left: 9px !important;
+  padding-right: 9px !important;
+}
+
+.\!py-0 {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.\!py-0\.5 {
+  padding-top: 0.125rem !important;
+  padding-bottom: 0.125rem !important;
+}
+
+.\!py-1\.5 {
+  padding-top: 0.375rem !important;
+  padding-bottom: 0.375rem !important;
+}
+
+.\!py-2 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.\!py-2\.5 {
+  padding-top: 0.625rem !important;
+  padding-bottom: 0.625rem !important;
+}
+
+.\!py-3 {
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+.\!py-4 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.\!py-\[11px\] {
+  padding-top: 11px !important;
+  padding-bottom: 11px !important;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-3\.5 {
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-\[15px\] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.px-\[2px\] {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.px-\[5px\] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.px-\[9px\] {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-1\.5 {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-\[13px\] {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.py-\[5px\] {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.py-\[7px\] {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.\!pl-2 {
+  padding-left: 0.5rem !important;
+}
+
+.\!pl-4 {
+  padding-left: 1rem !important;
+}
+
+.\!pl-\[9px\] {
+  padding-left: 9px !important;
+}
+
+.\!pr-1\.5 {
+  padding-right: 0.375rem !important;
+}
+
+.\!pr-2\.5 {
+  padding-right: 0.625rem !important;
+}
+
+.\!pr-\[7px\] {
+  padding-right: 7px !important;
+}
+
+.pb-\[7px\] {
+  padding-bottom: 7px;
+}
+
+.pl-1 {
+  padding-left: 0.25rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pl-2\.5 {
+  padding-left: 0.625rem;
+}
+
+.pl-\[15px\] {
+  padding-left: 15px;
+}
+
+.pr-1 {
+  padding-right: 0.25rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
+.pr-2\.5 {
+  padding-right: 0.625rem;
+}
+
+.pr-\[11\.1px\] {
+  padding-right: 11.1px;
+}
+
+.pr-\[11px\] {
+  padding-right: 11px;
+}
+
+.pr-\[35px\] {
+  padding-right: 35px;
+}
+
+.pt-2\.5 {
+  padding-top: 0.625rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pt-\[13px\] {
+  padding-top: 13px;
+}
+
+.pt-\[15px\] {
+  padding-top: 15px;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pb-\[13px\] {
+  padding-bottom: 13px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.\!text-sm {
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+}
+
+.\!text-xs {
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
+}
+
+.text-\[13px\] {
+  font-size: 13px;
+}
+
+.text-\[26px\] {
+  font-size: 26px;
+}
+
+.text-\[32px\] {
+  font-size: 32px;
+}
+
+.text-\[8px\] {
+  font-size: 8px;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.leading-3 {
+  line-height: 0.75rem;
+}
+
+.leading-4 {
+  line-height: 1rem;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
+}
+
+.leading-\[1\.17\] {
+  line-height: 1.17;
+}
+
+.leading-\[14px\] {
+  line-height: 14px;
+}
+
+.leading-\[15px\] {
+  line-height: 15px;
+}
+
+.leading-\[17px\] {
+  line-height: 17px;
+}
+
+.leading-\[1\] {
+  line-height: 1;
+}
+
+.leading-\[21px\] {
+  line-height: 21px;
+}
+
+.leading-\[29px\] {
+  line-height: 29px;
+}
+
+.leading-\[56px\] {
+  line-height: 56px;
+}
+
+.leading-\[9px\] {
+  line-height: 9px;
+}
+
+.\!text-app-baby-blue {
+  color: var(--appBabyBlue) !important;
+}
+
+.\!text-app-charcoal-gray {
+  color: var(--appCharcoalGray) !important;
+}
+
+.\!text-app-dusty-blue {
+  color: var(--appDustyBlue) !important;
+}
+
+.\!text-app-dusty-green {
+  color: var(--appDustyGreen) !important;
+}
+
+.\!text-app-dusty-rose {
+  color: var(--appDustyRose) !important;
+}
+
+.\!text-app-github {
+  color: var(--appGithub) !important;
+}
+
+.\!text-app-gray {
+  color: var(--appGray) !important;
+}
+
+.\!text-app-gray-light {
+  color: var(--appGrayLight) !important;
+}
+
+.\!text-app-green-light {
+  color: var(--appGreenLight) !important;
+}
+
+.\!text-app-medium-gray {
+  color: var(--appMediumGray) !important;
+}
+
+.\!text-app-medium-gray-light {
+  color: var(--appMediumGrayLight) !important;
+}
+
+.\!text-app-midnight-blue {
+  color: var(--appMidnightBlue) !important;
+}
+
+.\!text-app-salmon-pink {
+  color: var(--appSalmonPink) !important;
+}
+
+.\!text-app-salmon-pink-dark {
+  color: var(--appSalmonPinkDark) !important;
+}
+
+.\!text-app-salmon-pink-light {
+  color: var(--appSalmonPinkLight) !important;
+}
+
+.\!text-app-space-black {
+  color: var(--appSpaceBlack) !important;
+}
+
+.\!text-app-spring-green {
+  color: var(--appSpringGreen) !important;
+}
+
+.\!text-app-spring-green-light {
+  color: var(--appSpringGreenLight) !important;
+}
+
+.\!text-app-telegram {
+  color: var(--appTelegram) !important;
+}
+
+.\!text-app-white {
+  color: var(--appWhite) !important;
+}
+
+.\!text-app-x {
+  color: var(--appX) !important;
+}
+
+.\!text-app-yellow {
+  color: var(--appYellow) !important;
+}
+
+.text-app-baby-blue {
+  color: var(--appBabyBlue);
+}
+
+.text-app-charcoal-gray {
+  color: var(--appCharcoalGray);
+}
+
+.text-app-dusty-blue {
+  color: var(--appDustyBlue);
+}
+
+.text-app-dusty-green {
+  color: var(--appDustyGreen);
+}
+
+.text-app-dusty-rose {
+  color: var(--appDustyRose);
+}
+
+.text-app-github {
+  color: var(--appGithub);
+}
+
+.text-app-gray {
+  color: var(--appGray);
+}
+
+.text-app-gray-light {
+  color: var(--appGrayLight);
+}
+
+.text-app-green-light {
+  color: var(--appGreenLight);
+}
+
+.text-app-medium-gray {
+  color: var(--appMediumGray);
+}
+
+.text-app-medium-gray-light {
+  color: var(--appMediumGrayLight);
+}
+
+.text-app-midnight-blue {
+  color: var(--appMidnightBlue);
+}
+
+.text-app-salmon-pink {
+  color: var(--appSalmonPink);
+}
+
+.text-app-salmon-pink-dark {
+  color: var(--appSalmonPinkDark);
+}
+
+.text-app-salmon-pink-light {
+  color: var(--appSalmonPinkLight);
+}
+
+.text-app-space-black {
+  color: var(--appSpaceBlack);
+}
+
+.text-app-spring-green {
+  color: var(--appSpringGreen);
+}
+
+.text-app-spring-green-light {
+  color: var(--appSpringGreenLight);
+}
+
+.text-app-telegram {
+  color: var(--appTelegram);
+}
+
+.text-app-white {
+  color: var(--appWhite);
+}
+
+.text-app-x {
+  color: var(--appX);
+}
+
+.text-app-yellow {
+  color: var(--appYellow);
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity, 1));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.\!caret-app-space-black {
+  caret-color: var(--appSpaceBlack) !important;
+}
+
+.caret-app-white {
+  caret-color: var(--appWhite);
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+* {
+  font-family: 'Inter';
+}
+
+.focus-within\:bg-app-white:focus-within {
+  background-color: var(--appWhite);
+}
+
+.focus-within\:text-app-space-black:focus-within {
+  color: var(--appSpaceBlack);
+}
+
+.hover\:\!border-app-baby-blue:hover {
+  border-color: var(--appBabyBlue) !important;
+}
+
+.hover\:\!border-app-charcoal-gray:hover {
+  border-color: var(--appCharcoalGray) !important;
+}
+
+.hover\:\!border-app-dusty-blue:hover {
+  border-color: var(--appDustyBlue) !important;
+}
+
+.hover\:\!border-app-dusty-green:hover {
+  border-color: var(--appDustyGreen) !important;
+}
+
+.hover\:\!border-app-dusty-rose:hover {
+  border-color: var(--appDustyRose) !important;
+}
+
+.hover\:\!border-app-github:hover {
+  border-color: var(--appGithub) !important;
+}
+
+.hover\:\!border-app-gray:hover {
+  border-color: var(--appGray) !important;
+}
+
+.hover\:\!border-app-gray-light:hover {
+  border-color: var(--appGrayLight) !important;
+}
+
+.hover\:\!border-app-green-light:hover {
+  border-color: var(--appGreenLight) !important;
+}
+
+.hover\:\!border-app-medium-gray:hover {
+  border-color: var(--appMediumGray) !important;
+}
+
+.hover\:\!border-app-medium-gray-light:hover {
+  border-color: var(--appMediumGrayLight) !important;
+}
+
+.hover\:\!border-app-midnight-blue:hover {
+  border-color: var(--appMidnightBlue) !important;
+}
+
+.hover\:\!border-app-salmon-pink:hover {
+  border-color: var(--appSalmonPink) !important;
+}
+
+.hover\:\!border-app-salmon-pink-dark:hover {
+  border-color: var(--appSalmonPinkDark) !important;
+}
+
+.hover\:\!border-app-salmon-pink-light:hover {
+  border-color: var(--appSalmonPinkLight) !important;
+}
+
+.hover\:\!border-app-space-black:hover {
+  border-color: var(--appSpaceBlack) !important;
+}
+
+.hover\:\!border-app-spring-green:hover {
+  border-color: var(--appSpringGreen) !important;
+}
+
+.hover\:\!border-app-spring-green-light:hover {
+  border-color: var(--appSpringGreenLight) !important;
+}
+
+.hover\:\!border-app-telegram:hover {
+  border-color: var(--appTelegram) !important;
+}
+
+.hover\:\!border-app-white:hover {
+  border-color: var(--appWhite) !important;
+}
+
+.hover\:\!border-app-x:hover {
+  border-color: var(--appX) !important;
+}
+
+.hover\:\!border-app-yellow:hover {
+  border-color: var(--appYellow) !important;
+}
+
+.hover\:border-app-baby-blue:hover {
+  border-color: var(--appBabyBlue);
+}
+
+.hover\:border-app-charcoal-gray:hover {
+  border-color: var(--appCharcoalGray);
+}
+
+.hover\:border-app-dusty-blue:hover {
+  border-color: var(--appDustyBlue);
+}
+
+.hover\:border-app-dusty-green:hover {
+  border-color: var(--appDustyGreen);
+}
+
+.hover\:border-app-dusty-rose:hover {
+  border-color: var(--appDustyRose);
+}
+
+.hover\:border-app-github:hover {
+  border-color: var(--appGithub);
+}
+
+.hover\:border-app-gray:hover {
+  border-color: var(--appGray);
+}
+
+.hover\:border-app-gray-light:hover {
+  border-color: var(--appGrayLight);
+}
+
+.hover\:border-app-green-light:hover {
+  border-color: var(--appGreenLight);
+}
+
+.hover\:border-app-medium-gray:hover {
+  border-color: var(--appMediumGray);
+}
+
+.hover\:border-app-medium-gray-light:hover {
+  border-color: var(--appMediumGrayLight);
+}
+
+.hover\:border-app-midnight-blue:hover {
+  border-color: var(--appMidnightBlue);
+}
+
+.hover\:border-app-salmon-pink:hover {
+  border-color: var(--appSalmonPink);
+}
+
+.hover\:border-app-salmon-pink-dark:hover {
+  border-color: var(--appSalmonPinkDark);
+}
+
+.hover\:border-app-salmon-pink-light:hover {
+  border-color: var(--appSalmonPinkLight);
+}
+
+.hover\:border-app-space-black:hover {
+  border-color: var(--appSpaceBlack);
+}
+
+.hover\:border-app-spring-green:hover {
+  border-color: var(--appSpringGreen);
+}
+
+.hover\:border-app-spring-green-light:hover {
+  border-color: var(--appSpringGreenLight);
+}
+
+.hover\:border-app-telegram:hover {
+  border-color: var(--appTelegram);
+}
+
+.hover\:border-app-white:hover {
+  border-color: var(--appWhite);
+}
+
+.hover\:border-app-x:hover {
+  border-color: var(--appX);
+}
+
+.hover\:border-app-yellow:hover {
+  border-color: var(--appYellow);
+}
+
+.hover\:\!bg-app-baby-blue:hover {
+  background-color: var(--appBabyBlue) !important;
+}
+
+.hover\:\!bg-app-charcoal-gray:hover {
+  background-color: var(--appCharcoalGray) !important;
+}
+
+.hover\:\!bg-app-dusty-blue:hover {
+  background-color: var(--appDustyBlue) !important;
+}
+
+.hover\:\!bg-app-dusty-green:hover {
+  background-color: var(--appDustyGreen) !important;
+}
+
+.hover\:\!bg-app-dusty-rose:hover {
+  background-color: var(--appDustyRose) !important;
+}
+
+.hover\:\!bg-app-github:hover {
+  background-color: var(--appGithub) !important;
+}
+
+.hover\:\!bg-app-gray:hover {
+  background-color: var(--appGray) !important;
+}
+
+.hover\:\!bg-app-gray-light:hover {
+  background-color: var(--appGrayLight) !important;
+}
+
+.hover\:\!bg-app-green-light:hover {
+  background-color: var(--appGreenLight) !important;
+}
+
+.hover\:\!bg-app-medium-gray:hover {
+  background-color: var(--appMediumGray) !important;
+}
+
+.hover\:\!bg-app-medium-gray-light:hover {
+  background-color: var(--appMediumGrayLight) !important;
+}
+
+.hover\:\!bg-app-midnight-blue:hover {
+  background-color: var(--appMidnightBlue) !important;
+}
+
+.hover\:\!bg-app-salmon-pink:hover {
+  background-color: var(--appSalmonPink) !important;
+}
+
+.hover\:\!bg-app-salmon-pink-dark:hover {
+  background-color: var(--appSalmonPinkDark) !important;
+}
+
+.hover\:\!bg-app-salmon-pink-light:hover {
+  background-color: var(--appSalmonPinkLight) !important;
+}
+
+.hover\:\!bg-app-space-black:hover {
+  background-color: var(--appSpaceBlack) !important;
+}
+
+.hover\:\!bg-app-spring-green:hover {
+  background-color: var(--appSpringGreen) !important;
+}
+
+.hover\:\!bg-app-spring-green-light:hover {
+  background-color: var(--appSpringGreenLight) !important;
+}
+
+.hover\:\!bg-app-telegram:hover {
+  background-color: var(--appTelegram) !important;
+}
+
+.hover\:\!bg-app-white:hover {
+  background-color: var(--appWhite) !important;
+}
+
+.hover\:\!bg-app-x:hover {
+  background-color: var(--appX) !important;
+}
+
+.hover\:\!bg-app-yellow:hover {
+  background-color: var(--appYellow) !important;
+}
+
+.hover\:bg-app-baby-blue:hover {
+  background-color: var(--appBabyBlue);
+}
+
+.hover\:bg-app-charcoal-gray:hover {
+  background-color: var(--appCharcoalGray);
+}
+
+.hover\:bg-app-dusty-blue:hover {
+  background-color: var(--appDustyBlue);
+}
+
+.hover\:bg-app-dusty-green:hover {
+  background-color: var(--appDustyGreen);
+}
+
+.hover\:bg-app-dusty-rose:hover {
+  background-color: var(--appDustyRose);
+}
+
+.hover\:bg-app-github:hover {
+  background-color: var(--appGithub);
+}
+
+.hover\:bg-app-gray:hover {
+  background-color: var(--appGray);
+}
+
+.hover\:bg-app-gray-light:hover {
+  background-color: var(--appGrayLight);
+}
+
+.hover\:bg-app-green-light:hover {
+  background-color: var(--appGreenLight);
+}
+
+.hover\:bg-app-medium-gray:hover {
+  background-color: var(--appMediumGray);
+}
+
+.hover\:bg-app-medium-gray-light:hover {
+  background-color: var(--appMediumGrayLight);
+}
+
+.hover\:bg-app-midnight-blue:hover {
+  background-color: var(--appMidnightBlue);
+}
+
+.hover\:bg-app-salmon-pink:hover {
+  background-color: var(--appSalmonPink);
+}
+
+.hover\:bg-app-salmon-pink-dark:hover {
+  background-color: var(--appSalmonPinkDark);
+}
+
+.hover\:bg-app-salmon-pink-light:hover {
+  background-color: var(--appSalmonPinkLight);
+}
+
+.hover\:bg-app-space-black:hover {
+  background-color: var(--appSpaceBlack);
+}
+
+.hover\:bg-app-spring-green:hover {
+  background-color: var(--appSpringGreen);
+}
+
+.hover\:bg-app-spring-green-light:hover {
+  background-color: var(--appSpringGreenLight);
+}
+
+.hover\:bg-app-telegram:hover {
+  background-color: var(--appTelegram);
+}
+
+.hover\:bg-app-white:hover {
+  background-color: var(--appWhite);
+}
+
+.hover\:bg-app-x:hover {
+  background-color: var(--appX);
+}
+
+.hover\:bg-app-yellow:hover {
+  background-color: var(--appYellow);
+}
+
+.hover\:bg-trade-menu-gradient:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--appSalmonPink),
+    var(--appSpringGreen)
+  );
+}
+
+.hover\:\!text-app-baby-blue:hover {
+  color: var(--appBabyBlue) !important;
+}
+
+.hover\:\!text-app-charcoal-gray:hover {
+  color: var(--appCharcoalGray) !important;
+}
+
+.hover\:\!text-app-dusty-blue:hover {
+  color: var(--appDustyBlue) !important;
+}
+
+.hover\:\!text-app-dusty-green:hover {
+  color: var(--appDustyGreen) !important;
+}
+
+.hover\:\!text-app-dusty-rose:hover {
+  color: var(--appDustyRose) !important;
+}
+
+.hover\:\!text-app-github:hover {
+  color: var(--appGithub) !important;
+}
+
+.hover\:\!text-app-gray:hover {
+  color: var(--appGray) !important;
+}
+
+.hover\:\!text-app-gray-light:hover {
+  color: var(--appGrayLight) !important;
+}
+
+.hover\:\!text-app-green-light:hover {
+  color: var(--appGreenLight) !important;
+}
+
+.hover\:\!text-app-medium-gray:hover {
+  color: var(--appMediumGray) !important;
+}
+
+.hover\:\!text-app-medium-gray-light:hover {
+  color: var(--appMediumGrayLight) !important;
+}
+
+.hover\:\!text-app-midnight-blue:hover {
+  color: var(--appMidnightBlue) !important;
+}
+
+.hover\:\!text-app-salmon-pink:hover {
+  color: var(--appSalmonPink) !important;
+}
+
+.hover\:\!text-app-salmon-pink-dark:hover {
+  color: var(--appSalmonPinkDark) !important;
+}
+
+.hover\:\!text-app-salmon-pink-light:hover {
+  color: var(--appSalmonPinkLight) !important;
+}
+
+.hover\:\!text-app-space-black:hover {
+  color: var(--appSpaceBlack) !important;
+}
+
+.hover\:\!text-app-spring-green:hover {
+  color: var(--appSpringGreen) !important;
+}
+
+.hover\:\!text-app-spring-green-light:hover {
+  color: var(--appSpringGreenLight) !important;
+}
+
+.hover\:\!text-app-telegram:hover {
+  color: var(--appTelegram) !important;
+}
+
+.hover\:\!text-app-white:hover {
+  color: var(--appWhite) !important;
+}
+
+.hover\:\!text-app-x:hover {
+  color: var(--appX) !important;
+}
+
+.hover\:\!text-app-yellow:hover {
+  color: var(--appYellow) !important;
+}
+
+.hover\:text-app-baby-blue:hover {
+  color: var(--appBabyBlue);
+}
+
+.hover\:text-app-charcoal-gray:hover {
+  color: var(--appCharcoalGray);
+}
+
+.hover\:text-app-dusty-blue:hover {
+  color: var(--appDustyBlue);
+}
+
+.hover\:text-app-dusty-green:hover {
+  color: var(--appDustyGreen);
+}
+
+.hover\:text-app-dusty-rose:hover {
+  color: var(--appDustyRose);
+}
+
+.hover\:text-app-github:hover {
+  color: var(--appGithub);
+}
+
+.hover\:text-app-gray:hover {
+  color: var(--appGray);
+}
+
+.hover\:text-app-gray-light:hover {
+  color: var(--appGrayLight);
+}
+
+.hover\:text-app-green-light:hover {
+  color: var(--appGreenLight);
+}
+
+.hover\:text-app-medium-gray:hover {
+  color: var(--appMediumGray);
+}
+
+.hover\:text-app-medium-gray-light:hover {
+  color: var(--appMediumGrayLight);
+}
+
+.hover\:text-app-midnight-blue:hover {
+  color: var(--appMidnightBlue);
+}
+
+.hover\:text-app-salmon-pink:hover {
+  color: var(--appSalmonPink);
+}
+
+.hover\:text-app-salmon-pink-dark:hover {
+  color: var(--appSalmonPinkDark);
+}
+
+.hover\:text-app-salmon-pink-light:hover {
+  color: var(--appSalmonPinkLight);
+}
+
+.hover\:text-app-space-black:hover {
+  color: var(--appSpaceBlack);
+}
+
+.hover\:text-app-spring-green:hover {
+  color: var(--appSpringGreen);
+}
+
+.hover\:text-app-spring-green-light:hover {
+  color: var(--appSpringGreenLight);
+}
+
+.hover\:text-app-telegram:hover {
+  color: var(--appTelegram);
+}
+
+.hover\:text-app-white:hover {
+  color: var(--appWhite);
+}
+
+.hover\:text-app-x:hover {
+  color: var(--appX);
+}
+
+.hover\:text-app-yellow:hover {
+  color: var(--appYellow);
+}
+
+.group:focus-within .group-focus-within\:\!bg-app-space-black {
+  background-color: var(--appSpaceBlack) !important;
+}
+
+.group\/box:hover .group-hover\/box\:visible {
+  visibility: visible;
+}
+
+.group:hover .group-hover\:\!border-app-baby-blue {
+  border-color: var(--appBabyBlue) !important;
+}
+
+.group:hover .group-hover\:\!border-app-charcoal-gray {
+  border-color: var(--appCharcoalGray) !important;
+}
+
+.group:hover .group-hover\:\!border-app-dusty-blue {
+  border-color: var(--appDustyBlue) !important;
+}
+
+.group:hover .group-hover\:\!border-app-dusty-green {
+  border-color: var(--appDustyGreen) !important;
+}
+
+.group:hover .group-hover\:\!border-app-dusty-rose {
+  border-color: var(--appDustyRose) !important;
+}
+
+.group:hover .group-hover\:\!border-app-github {
+  border-color: var(--appGithub) !important;
+}
+
+.group:hover .group-hover\:\!border-app-gray {
+  border-color: var(--appGray) !important;
+}
+
+.group:hover .group-hover\:\!border-app-gray-light {
+  border-color: var(--appGrayLight) !important;
+}
+
+.group:hover .group-hover\:\!border-app-green-light {
+  border-color: var(--appGreenLight) !important;
+}
+
+.group:hover .group-hover\:\!border-app-medium-gray {
+  border-color: var(--appMediumGray) !important;
+}
+
+.group:hover .group-hover\:\!border-app-medium-gray-light {
+  border-color: var(--appMediumGrayLight) !important;
+}
+
+.group:hover .group-hover\:\!border-app-midnight-blue {
+  border-color: var(--appMidnightBlue) !important;
+}
+
+.group:hover .group-hover\:\!border-app-salmon-pink {
+  border-color: var(--appSalmonPink) !important;
+}
+
+.group:hover .group-hover\:\!border-app-salmon-pink-dark {
+  border-color: var(--appSalmonPinkDark) !important;
+}
+
+.group:hover .group-hover\:\!border-app-salmon-pink-light {
+  border-color: var(--appSalmonPinkLight) !important;
+}
+
+.group:hover .group-hover\:\!border-app-space-black {
+  border-color: var(--appSpaceBlack) !important;
+}
+
+.group:hover .group-hover\:\!border-app-spring-green {
+  border-color: var(--appSpringGreen) !important;
+}
+
+.group:hover .group-hover\:\!border-app-spring-green-light {
+  border-color: var(--appSpringGreenLight) !important;
+}
+
+.group:hover .group-hover\:\!border-app-telegram {
+  border-color: var(--appTelegram) !important;
+}
+
+.group:hover .group-hover\:\!border-app-white {
+  border-color: var(--appWhite) !important;
+}
+
+.group:hover .group-hover\:\!border-app-x {
+  border-color: var(--appX) !important;
+}
+
+.group:hover .group-hover\:\!border-app-yellow {
+  border-color: var(--appYellow) !important;
+}
+
+.group:hover .group-hover\:border-app-baby-blue {
+  border-color: var(--appBabyBlue);
+}
+
+.group:hover .group-hover\:border-app-charcoal-gray {
+  border-color: var(--appCharcoalGray);
+}
+
+.group:hover .group-hover\:border-app-dusty-blue {
+  border-color: var(--appDustyBlue);
+}
+
+.group:hover .group-hover\:border-app-dusty-green {
+  border-color: var(--appDustyGreen);
+}
+
+.group:hover .group-hover\:border-app-dusty-rose {
+  border-color: var(--appDustyRose);
+}
+
+.group:hover .group-hover\:border-app-github {
+  border-color: var(--appGithub);
+}
+
+.group:hover .group-hover\:border-app-gray {
+  border-color: var(--appGray);
+}
+
+.group:hover .group-hover\:border-app-gray-light {
+  border-color: var(--appGrayLight);
+}
+
+.group:hover .group-hover\:border-app-green-light {
+  border-color: var(--appGreenLight);
+}
+
+.group:hover .group-hover\:border-app-medium-gray {
+  border-color: var(--appMediumGray);
+}
+
+.group:hover .group-hover\:border-app-medium-gray-light {
+  border-color: var(--appMediumGrayLight);
+}
+
+.group:hover .group-hover\:border-app-midnight-blue {
+  border-color: var(--appMidnightBlue);
+}
+
+.group:hover .group-hover\:border-app-salmon-pink {
+  border-color: var(--appSalmonPink);
+}
+
+.group:hover .group-hover\:border-app-salmon-pink-dark {
+  border-color: var(--appSalmonPinkDark);
+}
+
+.group:hover .group-hover\:border-app-salmon-pink-light {
+  border-color: var(--appSalmonPinkLight);
+}
+
+.group:hover .group-hover\:border-app-space-black {
+  border-color: var(--appSpaceBlack);
+}
+
+.group:hover .group-hover\:border-app-spring-green {
+  border-color: var(--appSpringGreen);
+}
+
+.group:hover .group-hover\:border-app-spring-green-light {
+  border-color: var(--appSpringGreenLight);
+}
+
+.group:hover .group-hover\:border-app-telegram {
+  border-color: var(--appTelegram);
+}
+
+.group:hover .group-hover\:border-app-white {
+  border-color: var(--appWhite);
+}
+
+.group:hover .group-hover\:border-app-x {
+  border-color: var(--appX);
+}
+
+.group:hover .group-hover\:border-app-yellow {
+  border-color: var(--appYellow);
+}
+
+.group\/nested:hover .group-hover\/nested\:bg-app-white {
+  background-color: var(--appWhite);
+}
+
+.group:hover .group-hover\:\!bg-app-baby-blue {
+  background-color: var(--appBabyBlue) !important;
+}
+
+.group:hover .group-hover\:\!bg-app-charcoal-gray {
+  background-color: var(--appCharcoalGray) !important;
+}
+
+.group:hover .group-hover\:\!bg-app-dusty-blue {
+  background-color: var(--appDustyBlue) !important;
+}
+
+.group:hover .group-hover\:\!bg-app-dusty-green {
+  background-color: var(--appDustyGreen) !important;
+}
+
+.group:hover .group-hover\:\!bg-app-dusty-rose {
+  background-color: var(--appDustyRose) !important;
+}
+
+.group:hover .group-hover\:\!bg-app-github {
+  background-color: var(--appGithub) !important;
+}
+
+.group:hover .group-hover\:\!bg-app-gray {
+  background-color: var(--appGray) !important;
+}
+
+.group:hover .group-hover\:\!bg-app-gray-light {
+  background-color: var(--appGrayLight) !important;
+}
+
+.group:hover .group-hover\:\!bg-app-green-light {
+  background-color: var(--appGreenLight) !important;
+}
+
+.group:hover .group-hover\:\!bg-app-medium-gray {
+  background-color: var(--appMediumGray) !important;
+}
+
+.group:hover .group-hover\:\!bg-app-medium-gray-light {
+  background-color: var(--appMediumGrayLight) !important;
+}
+
+.group:hover .group-hover\:\!bg-app-midnight-blue {
+  background-color: var(--appMidnightBlue) !important;
+}
+
+.group:hover .group-hover\:\!bg-app-salmon-pink {
+  background-color: var(--appSalmonPink) !important;
+}
+
+.group:hover .group-hover\:\!bg-app-salmon-pink-dark {
+  background-color: var(--appSalmonPinkDark) !important;
+}
+
+.group:hover .group-hover\:\!bg-app-salmon-pink-light {
+  background-color: var(--appSalmonPinkLight) !important;
+}
+
+.group:hover .group-hover\:\!bg-app-space-black {
+  background-color: var(--appSpaceBlack) !important;
+}
+
+.group:hover .group-hover\:\!bg-app-spring-green {
+  background-color: var(--appSpringGreen) !important;
+}
+
+.group:hover .group-hover\:\!bg-app-spring-green-light {
+  background-color: var(--appSpringGreenLight) !important;
+}
+
+.group:hover .group-hover\:\!bg-app-telegram {
+  background-color: var(--appTelegram) !important;
+}
+
+.group:hover .group-hover\:\!bg-app-white {
+  background-color: var(--appWhite) !important;
+}
+
+.group:hover .group-hover\:\!bg-app-x {
+  background-color: var(--appX) !important;
+}
+
+.group:hover .group-hover\:\!bg-app-yellow {
+  background-color: var(--appYellow) !important;
+}
+
+.group:hover .group-hover\:bg-app-baby-blue {
+  background-color: var(--appBabyBlue);
+}
+
+.group:hover .group-hover\:bg-app-charcoal-gray {
+  background-color: var(--appCharcoalGray);
+}
+
+.group:hover .group-hover\:bg-app-dusty-blue {
+  background-color: var(--appDustyBlue);
+}
+
+.group:hover .group-hover\:bg-app-dusty-green {
+  background-color: var(--appDustyGreen);
+}
+
+.group:hover .group-hover\:bg-app-dusty-rose {
+  background-color: var(--appDustyRose);
+}
+
+.group:hover .group-hover\:bg-app-github {
+  background-color: var(--appGithub);
+}
+
+.group:hover .group-hover\:bg-app-gray {
+  background-color: var(--appGray);
+}
+
+.group:hover .group-hover\:bg-app-gray-light {
+  background-color: var(--appGrayLight);
+}
+
+.group:hover .group-hover\:bg-app-green-light {
+  background-color: var(--appGreenLight);
+}
+
+.group:hover .group-hover\:bg-app-medium-gray {
+  background-color: var(--appMediumGray);
+}
+
+.group:hover .group-hover\:bg-app-medium-gray-light {
+  background-color: var(--appMediumGrayLight);
+}
+
+.group:hover .group-hover\:bg-app-midnight-blue {
+  background-color: var(--appMidnightBlue);
+}
+
+.group:hover .group-hover\:bg-app-salmon-pink {
+  background-color: var(--appSalmonPink);
+}
+
+.group:hover .group-hover\:bg-app-salmon-pink-dark {
+  background-color: var(--appSalmonPinkDark);
+}
+
+.group:hover .group-hover\:bg-app-salmon-pink-light {
+  background-color: var(--appSalmonPinkLight);
+}
+
+.group:hover .group-hover\:bg-app-space-black {
+  background-color: var(--appSpaceBlack);
+}
+
+.group:hover .group-hover\:bg-app-spring-green {
+  background-color: var(--appSpringGreen);
+}
+
+.group:hover .group-hover\:bg-app-spring-green-light {
+  background-color: var(--appSpringGreenLight);
+}
+
+.group:hover .group-hover\:bg-app-telegram {
+  background-color: var(--appTelegram);
+}
+
+.group:hover .group-hover\:bg-app-white {
+  background-color: var(--appWhite);
+}
+
+.group:hover .group-hover\:bg-app-x {
+  background-color: var(--appX);
+}
+
+.group:hover .group-hover\:bg-app-yellow {
+  background-color: var(--appYellow);
+}
+
+.group\/box:hover .group-hover\/box\:\!bg-app-salmon-pink {
+  background-color: var(--appSalmonPink) !important;
+}
+
+.group\/box:hover .group-hover\/box\:bg-app-salmon-pink {
+  background-color: var(--appSalmonPink);
+}
+
+.group\/box:hover .group-hover\/box\:bg-app-space-black {
+  background-color: var(--appSpaceBlack);
+}
+
+.group\/box:hover .group-hover\/box\:text-app-medium-gray {
+  color: var(--appMediumGray);
+}
+
+.group\/box:hover .group-hover\/box\:text-app-space-black {
+  color: var(--appSpaceBlack);
+}
+
+.group:hover .group-hover\:\!text-app-baby-blue {
+  color: var(--appBabyBlue) !important;
+}
+
+.group:hover .group-hover\:\!text-app-charcoal-gray {
+  color: var(--appCharcoalGray) !important;
+}
+
+.group:hover .group-hover\:\!text-app-dusty-blue {
+  color: var(--appDustyBlue) !important;
+}
+
+.group:hover .group-hover\:\!text-app-dusty-green {
+  color: var(--appDustyGreen) !important;
+}
+
+.group:hover .group-hover\:\!text-app-dusty-rose {
+  color: var(--appDustyRose) !important;
+}
+
+.group:hover .group-hover\:\!text-app-github {
+  color: var(--appGithub) !important;
+}
+
+.group:hover .group-hover\:\!text-app-gray {
+  color: var(--appGray) !important;
+}
+
+.group:hover .group-hover\:\!text-app-gray-light {
+  color: var(--appGrayLight) !important;
+}
+
+.group:hover .group-hover\:\!text-app-green-light {
+  color: var(--appGreenLight) !important;
+}
+
+.group:hover .group-hover\:\!text-app-medium-gray {
+  color: var(--appMediumGray) !important;
+}
+
+.group:hover .group-hover\:\!text-app-medium-gray-light {
+  color: var(--appMediumGrayLight) !important;
+}
+
+.group:hover .group-hover\:\!text-app-midnight-blue {
+  color: var(--appMidnightBlue) !important;
+}
+
+.group:hover .group-hover\:\!text-app-salmon-pink {
+  color: var(--appSalmonPink) !important;
+}
+
+.group:hover .group-hover\:\!text-app-salmon-pink-dark {
+  color: var(--appSalmonPinkDark) !important;
+}
+
+.group:hover .group-hover\:\!text-app-salmon-pink-light {
+  color: var(--appSalmonPinkLight) !important;
+}
+
+.group:hover .group-hover\:\!text-app-space-black {
+  color: var(--appSpaceBlack) !important;
+}
+
+.group:hover .group-hover\:\!text-app-spring-green {
+  color: var(--appSpringGreen) !important;
+}
+
+.group:hover .group-hover\:\!text-app-spring-green-light {
+  color: var(--appSpringGreenLight) !important;
+}
+
+.group:hover .group-hover\:\!text-app-telegram {
+  color: var(--appTelegram) !important;
+}
+
+.group:hover .group-hover\:\!text-app-white {
+  color: var(--appWhite) !important;
+}
+
+.group:hover .group-hover\:\!text-app-x {
+  color: var(--appX) !important;
+}
+
+.group:hover .group-hover\:\!text-app-yellow {
+  color: var(--appYellow) !important;
+}
+
+.group:hover .group-hover\:text-app-baby-blue {
+  color: var(--appBabyBlue);
+}
+
+.group:hover .group-hover\:text-app-charcoal-gray {
+  color: var(--appCharcoalGray);
+}
+
+.group:hover .group-hover\:text-app-dusty-blue {
+  color: var(--appDustyBlue);
+}
+
+.group:hover .group-hover\:text-app-dusty-green {
+  color: var(--appDustyGreen);
+}
+
+.group:hover .group-hover\:text-app-dusty-rose {
+  color: var(--appDustyRose);
+}
+
+.group:hover .group-hover\:text-app-github {
+  color: var(--appGithub);
+}
+
+.group:hover .group-hover\:text-app-gray {
+  color: var(--appGray);
+}
+
+.group:hover .group-hover\:text-app-gray-light {
+  color: var(--appGrayLight);
+}
+
+.group:hover .group-hover\:text-app-green-light {
+  color: var(--appGreenLight);
+}
+
+.group:hover .group-hover\:text-app-medium-gray {
+  color: var(--appMediumGray);
+}
+
+.group:hover .group-hover\:text-app-medium-gray-light {
+  color: var(--appMediumGrayLight);
+}
+
+.group:hover .group-hover\:text-app-midnight-blue {
+  color: var(--appMidnightBlue);
+}
+
+.group:hover .group-hover\:text-app-salmon-pink {
+  color: var(--appSalmonPink);
+}
+
+.group:hover .group-hover\:text-app-salmon-pink-dark {
+  color: var(--appSalmonPinkDark);
+}
+
+.group:hover .group-hover\:text-app-salmon-pink-light {
+  color: var(--appSalmonPinkLight);
+}
+
+.group:hover .group-hover\:text-app-space-black {
+  color: var(--appSpaceBlack);
+}
+
+.group:hover .group-hover\:text-app-spring-green {
+  color: var(--appSpringGreen);
+}
+
+.group:hover .group-hover\:text-app-spring-green-light {
+  color: var(--appSpringGreenLight);
+}
+
+.group:hover .group-hover\:text-app-telegram {
+  color: var(--appTelegram);
+}
+
+.group:hover .group-hover\:text-app-white {
+  color: var(--appWhite);
+}
+
+.group:hover .group-hover\:text-app-x {
+  color: var(--appX);
+}
+
+.group:hover .group-hover\:text-app-yellow {
+  color: var(--appYellow);
+}
+
+.group\/box:hover .group-hover\/box\:text-app-salmon-pink {
+  color: var(--appSalmonPink);
+}
+
+.group\/box:hover .group-hover\/box\:text-app-white {
+  color: var(--appWhite);
+}
+
+@media (min-width: 600px) {
+  .sm\:hover\:bg-app-baby-blue:hover {
+    background-color: var(--appBabyBlue);
+  }
+
+  .sm\:hover\:bg-app-charcoal-gray:hover {
+    background-color: var(--appCharcoalGray);
+  }
+
+  .sm\:hover\:bg-app-dusty-blue:hover {
+    background-color: var(--appDustyBlue);
+  }
+
+  .sm\:hover\:bg-app-dusty-green:hover {
+    background-color: var(--appDustyGreen);
+  }
+
+  .sm\:hover\:bg-app-dusty-rose:hover {
+    background-color: var(--appDustyRose);
+  }
+
+  .sm\:hover\:bg-app-github:hover {
+    background-color: var(--appGithub);
+  }
+
+  .sm\:hover\:bg-app-gray:hover {
+    background-color: var(--appGray);
+  }
+
+  .sm\:hover\:bg-app-gray-light:hover {
+    background-color: var(--appGrayLight);
+  }
+
+  .sm\:hover\:bg-app-green-light:hover {
+    background-color: var(--appGreenLight);
+  }
+
+  .sm\:hover\:bg-app-medium-gray:hover {
+    background-color: var(--appMediumGray);
+  }
+
+  .sm\:hover\:bg-app-medium-gray-light:hover {
+    background-color: var(--appMediumGrayLight);
+  }
+
+  .sm\:hover\:bg-app-midnight-blue:hover {
+    background-color: var(--appMidnightBlue);
+  }
+
+  .sm\:hover\:bg-app-salmon-pink:hover {
+    background-color: var(--appSalmonPink);
+  }
+
+  .sm\:hover\:bg-app-salmon-pink-dark:hover {
+    background-color: var(--appSalmonPinkDark);
+  }
+
+  .sm\:hover\:bg-app-salmon-pink-light:hover {
+    background-color: var(--appSalmonPinkLight);
+  }
+
+  .sm\:hover\:bg-app-space-black:hover {
+    background-color: var(--appSpaceBlack);
+  }
+
+  .sm\:hover\:bg-app-spring-green:hover {
+    background-color: var(--appSpringGreen);
+  }
+
+  .sm\:hover\:bg-app-spring-green-light:hover {
+    background-color: var(--appSpringGreenLight);
+  }
+
+  .sm\:hover\:bg-app-telegram:hover {
+    background-color: var(--appTelegram);
+  }
+
+  .sm\:hover\:bg-app-white:hover {
+    background-color: var(--appWhite);
+  }
+
+  .sm\:hover\:bg-app-x:hover {
+    background-color: var(--appX);
+  }
+
+  .sm\:hover\:bg-app-yellow:hover {
+    background-color: var(--appYellow);
+  }
+
+  .sm\:hover\:text-app-baby-blue:hover {
+    color: var(--appBabyBlue);
+  }
+
+  .sm\:hover\:text-app-charcoal-gray:hover {
+    color: var(--appCharcoalGray);
+  }
+
+  .sm\:hover\:text-app-dusty-blue:hover {
+    color: var(--appDustyBlue);
+  }
+
+  .sm\:hover\:text-app-dusty-green:hover {
+    color: var(--appDustyGreen);
+  }
+
+  .sm\:hover\:text-app-dusty-rose:hover {
+    color: var(--appDustyRose);
+  }
+
+  .sm\:hover\:text-app-github:hover {
+    color: var(--appGithub);
+  }
+
+  .sm\:hover\:text-app-gray:hover {
+    color: var(--appGray);
+  }
+
+  .sm\:hover\:text-app-gray-light:hover {
+    color: var(--appGrayLight);
+  }
+
+  .sm\:hover\:text-app-green-light:hover {
+    color: var(--appGreenLight);
+  }
+
+  .sm\:hover\:text-app-medium-gray:hover {
+    color: var(--appMediumGray);
+  }
+
+  .sm\:hover\:text-app-medium-gray-light:hover {
+    color: var(--appMediumGrayLight);
+  }
+
+  .sm\:hover\:text-app-midnight-blue:hover {
+    color: var(--appMidnightBlue);
+  }
+
+  .sm\:hover\:text-app-salmon-pink:hover {
+    color: var(--appSalmonPink);
+  }
+
+  .sm\:hover\:text-app-salmon-pink-dark:hover {
+    color: var(--appSalmonPinkDark);
+  }
+
+  .sm\:hover\:text-app-salmon-pink-light:hover {
+    color: var(--appSalmonPinkLight);
+  }
+
+  .sm\:hover\:text-app-space-black:hover {
+    color: var(--appSpaceBlack);
+  }
+
+  .sm\:hover\:text-app-spring-green:hover {
+    color: var(--appSpringGreen);
+  }
+
+  .sm\:hover\:text-app-spring-green-light:hover {
+    color: var(--appSpringGreenLight);
+  }
+
+  .sm\:hover\:text-app-telegram:hover {
+    color: var(--appTelegram);
+  }
+
+  .sm\:hover\:text-app-white:hover {
+    color: var(--appWhite);
+  }
+
+  .sm\:hover\:text-app-x:hover {
+    color: var(--appX);
+  }
+
+  .sm\:hover\:text-app-yellow:hover {
+    color: var(--appYellow);
+  }
+}
+
+.\[\&\>div\:last-child\]\:block > div:last-child {
+  display: block;
+}
+
+.\[\&\>div\:last-child\]\:justify-end > div:last-child {
+  justify-content: flex-end;
+}
+
+.\[\&\>div\:not\(\:first-child\)\:not\(\:last-child\)\]\:justify-center
+  > div:not(:first-child):not(:last-child) {
+  justify-content: center;
+}
+
+.\[\&\>div\>div\:last-child\]\:\!px-1\.5 > div > div:last-child {
+  padding-left: 0.375rem !important;
+  padding-right: 0.375rem !important;
+}
+
+.\[\&\>div\>div\:last-child\]\:\!py-0 > div > div:last-child {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.\[\&\>div\>div\:last-child\]\:\!pr-1 > div > div:last-child {
+  padding-right: 0.25rem !important;
+}
+
+.\[\&\>div\>div\>div\]\:\!w-\[47px\] > div > div > div {
+  width: 47px !important;
+}
+
+.\[\&\>div\>div\>div_span\]\:\!text-app-medium-gray > div > div > div span {
+  color: var(--appMediumGray) !important;
+}
+
+.\[\&\>div\>div\>div_span\]\:\!text-app-space-black > div > div > div span {
+  color: var(--appSpaceBlack) !important;
+}
+
+.\[\&\>div\>div\]\:\!text-app-medium-gray > div > div {
+  color: var(--appMediumGray) !important;
+}
+
+.\[\&\>div\>div\]\:\!text-app-space-black > div > div {
+  color: var(--appSpaceBlack) !important;
+}
+
+.\[\&\>div\]\:flex > div {
+  display: flex;
+}
+
+.\[\&\>div\]\:items-center > div {
+  align-items: center;
+}
+
+.\[\&\>div\]\:\!px-2\.5 > div {
+  padding-left: 0.625rem !important;
+  padding-right: 0.625rem !important;
+}
+
+.\[\&\>div\]\:\!px-\[9px\] > div {
+  padding-left: 9px !important;
+  padding-right: 9px !important;
+}
+
+.\[\&\>div\]\:\!py-\[7px\] > div {
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+
+.\[\&\>div\]\:\!text-xs > div {
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
+}
+
+.\[\&\>g\>g\]\:transition-all > g > g {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.group:hover .group-hover\:\[\&\>g\>g\]\:fill-app-white > g > g {
+  fill: var(--appWhite);
+}
+
+.group:hover .group-hover\:\[\&\>g\>g\]\:stroke-app-white > g > g {
+  stroke: var(--appWhite);
+}
+
+.\[\&\>input\]\:text-\[26px\] > input {
+  font-size: 26px;
+}
+
+.\[\&\>input\]\:text-\[46px\] > input {
+  font-size: 46px;
+}
+
+.\[\&\>input\]\:font-semibold > input {
+  font-weight: 600;
+}
+
+.\[\&\>span\:last-child\]\:text-right > span:last-child {
+  text-align: right;
+}
+
+.\[\&\>span\:not\(\:first-child\)\:not\(\:last-child\)\]\:text-center
+  > span:not(:first-child):not(:last-child) {
+  text-align: center;
+}
+
+.\[\&\>span\:not\(\:first-child\)\:not\(\:nth-child\(6\)\)\]\:text-center
+  > span:not(:first-child):not(:nth-child(6)) {
+  text-align: center;
+}
+
+.\[\&\>span\:nth-child\(5\)\]\:text-right > span:nth-child(5) {
+  text-align: right;
+}
+
+.\[\&\>span\:nth-child\(6\)\]\:text-right > span:nth-child(6) {
+  text-align: right;
+}
+
+.\[\&\>span\]\:\!text-xs > span {
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
+}
+
+.\[\&\>span\]\:text-\[10px\] > span {
+  font-size: 10px;
+}
+
+.\[\&\>span\]\:text-app-white > span {
+  color: var(--appWhite);
+}
+
+.\[\&\>svg\]\:h-\[21px\] > svg {
+  height: 21px;
+}
+
+.\[\&\>svg\]\:w-\[21px\] > svg {
+  width: 21px;
+}
+
+.\[\&\>svg\]\:rounded-full > svg {
+  border-radius: 9999px;
+}
+
+.\[\&\>svg\]\:p-\[3px\] > svg {
+  padding: 3px;
+}
+
+.hover\:\[\&\>svg\]\:\!bg-\[\#0F11163A\] > svg:hover {
+  background-color: #0f11163a !important;
+}
+
+.hover\:\[\&\>svg\]\:\!bg-app-white > svg:hover {
+  background-color: var(--appWhite) !important;
+}
+
+.hover\:\[\&\>svg\]\:\!bg-black > svg:hover {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1)) !important;
+}
+
+.\[\&\>svg_path\]\:\!fill-app-medium-gray > svg path {
+  fill: var(--appMediumGray) !important;
+}
+
+.\[\&\>svg_path\]\:\!fill-app-space-black > svg path {
+  fill: var(--appSpaceBlack) !important;
+}
+
+.\[\&_\.close-icon_path\]\:fill-app-space-black .close-icon path {
+  fill: var(--appSpaceBlack);
+}
+
+.\[\&_g\]\:fill-app-medium-gray g {
+  fill: var(--appMediumGray);
+}
+
+.\[\&_g\]\:fill-app-midnight-blue g {
+  fill: var(--appMidnightBlue);
+}
+
+.\[\&_g\]\:fill-app-space-black g {
+  fill: var(--appSpaceBlack);
+}
+
+.\[\&_g\]\:fill-app-white g {
+  fill: var(--appWhite);
+}
+
+.group:hover .group-hover\:\[\&_g\]\:fill-app-space-black g {
+  fill: var(--appSpaceBlack);
+}
+
+.\[\&_h1\]\:\!text-xs h1 {
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
+}
+
+.\[\&_h1\]\:text-\[46px\] h1 {
+  font-size: 46px;
+}
+
+.\[\&_h1\]\:text-lg h1 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.\[\&_h1\]\:text-xs h1 {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.\[\&_h1\]\:\!font-bold h1 {
+  font-weight: 700 !important;
+}
+
+.\[\&_h1\]\:\!text-app-medium-gray h1 {
+  color: var(--appMediumGray) !important;
+}
+
+.\[\&_h1\]\:text-app-medium-gray h1 {
+  color: var(--appMediumGray);
+}
+
+.\[\&_h1\]\:text-app-salmon-pink h1 {
+  color: var(--appSalmonPink);
+}
+
+.\[\&_h1\]\:text-app-space-black h1 {
+  color: var(--appSpaceBlack);
+}
+
+.\[\&_h1\]\:text-app-spring-green h1 {
+  color: var(--appSpringGreen);
+}
+
+.\[\&_img\]\:h-full img {
+  height: 100%;
+}
+
+.\[\&_img\]\:w-full img {
+  width: 100%;
+}
+
+.\[\&_input\]\:max-w-\[331px\] input {
+  max-width: 331px;
+}
+
+.\[\&_input\]\:max-w-\[363px\] input {
+  max-width: 363px;
+}
+
+.\[\&_input\]\:text-\[46px\] input {
+  font-size: 46px;
+}
+
+.\[\&_input\]\:font-normal input {
+  font-weight: 400;
+}
+
+.\[\&_input\]\:text-app-space-black input {
+  color: var(--appSpaceBlack);
+}
+
+.\[\&_input\]\:\[direction\:rtl\] input {
+  direction: rtl;
+}
+
+.\[\&_input\]\:placeholder\:text-sm input::placeholder {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.\[\&_input\]\:placeholder\:text-app-medium-gray input::placeholder {
+  color: var(--appMediumGray);
+}
+
+.\[\&_path\]\:fill-app-baby-blue path {
+  fill: var(--appBabyBlue);
+}
+
+.\[\&_path\]\:fill-app-medium-gray path {
+  fill: var(--appMediumGray);
+}
+
+.\[\&_path\]\:fill-app-space-black path {
+  fill: var(--appSpaceBlack);
+}
+
+.\[\&_path\]\:fill-app-white path {
+  fill: var(--appWhite);
+}
+
+.\[\&_path\]\:transition-all path {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.\[\&_path\]\:focus-within\:fill-current:focus-within path {
+  fill: currentColor;
+}
+
+.\[\&_path\]\:hover\:fill-app-github:hover path {
+  fill: var(--appGithub);
+}
+
+.\[\&_path\]\:hover\:fill-app-telegram:hover path {
+  fill: var(--appTelegram);
+}
+
+.\[\&_path\]\:hover\:fill-app-x:hover path {
+  fill: var(--appX);
+}
+
+.\[\&_path\]\:hover\:fill-current:hover path {
+  fill: currentColor;
+}
+
+.hover\:\[\&_path\]\:fill-app-white path:hover {
+  fill: var(--appWhite);
+}
+
+.group\/badge:hover
+  .group-hover\/badge\:\[\&_path\]\:fill-app-space-black
+  path {
+  fill: var(--appSpaceBlack);
+}
+
+.group:hover .group-hover\:\[\&_path\]\:fill-app-baby-blue path {
+  fill: var(--appBabyBlue);
+}
+
+.group:hover .group-hover\:\[\&_path\]\:fill-app-medium-gray path {
+  fill: var(--appMediumGray);
+}
+
+.group:hover .group-hover\:\[\&_path\]\:fill-app-midnight-blue path {
+  fill: var(--appMidnightBlue);
+}
+
+.group:hover .group-hover\:\[\&_path\]\:fill-app-salmon-pink path {
+  fill: var(--appSalmonPink);
+}
+
+.group:hover .group-hover\:\[\&_path\]\:fill-app-space-black path {
+  fill: var(--appSpaceBlack);
+}
+
+.group:hover .group-hover\:\[\&_path\]\:fill-app-white path {
+  fill: var(--appWhite);
+}
+
+.group:focus-within .group-focus-within\:\[\&_span\]\:\!text-app-white span {
+  color: var(--appWhite) !important;
+}
+
+.group:hover .group-hover\:\[\&_span\]\:\!text-app-space-black span {
+  color: var(--appSpaceBlack) !important;
+}
+
+.group:hover .group-hover\:\[\&_span\]\:\!text-app-white span {
+  color: var(--appWhite) !important;
+}

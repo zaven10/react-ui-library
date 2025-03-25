@@ -1,0 +1,71 @@
+{
+  "NOTIFICATION_BAR": {
+    "TEXT": "BagSwap V4 added to the roadmap.",
+    "LINK": "Learn more →"
+  },
+  "CONNECT_WALLET": "Connect Wallet",
+  "NAVBAR": {
+    "SETTINGS_MODAL": {
+      "TITLE": "Settings",
+      "SHOW_TESTNET": "Show Testnet",
+      "FAST_ROUTING_BETA": "Fast Routing (BETA)",
+      "BAG_SWAP_V3": "BagSwap V3",
+      "BAG_SWAP_V2": "BagSwap V2",
+      "BAG_SWAP_STABLE": "BagSwap Stable",
+      "BAG_SWAP_LINKED_POOL": "BagSwap MM Linked Pool",
+      "ALLOW_MULTIHOPS": "Allow Multihops",
+      "ALLOW_SPLIT_ROUTING": "Allow Split Routing",
+      "TRANSACTION_DEADLINE": "Transaction Deadline",
+      "MINUTES": "Minutes",
+      "SLIPPAGE_TOLERANCE": "Slippage Tolerance",
+      "LANGUAGE": "Language",
+      "DEFAULT_TX_SPEED": "Default Transaction Speed (GWEI)"
+    },
+    "BAG_SWAP": {
+      "PROJECT": {
+        "TITLE": "Project",
+        "JOIN_US": "Join Us",
+        "BLOG": "Blog"
+      },
+      "PROTOCOL": {
+        "TITLE": "Protocol",
+        "SUPERNOVA": "Zenon Network Supernova",
+        "BAG_TOKEN": "BAG Token",
+        "TOKEN": "xZNN Token",
+        "NATIVE_TOKEN": "Native ZNN Token"
+      },
+      "SUPPORT": {
+        "TITLE": "Support",
+        "DOCUMENTATION": "Documentation",
+        "CONTACT": "Contact Us"
+      }
+    },
+    "TRADE": {
+      "TITLE": "Trade",
+      "SWAP": "Swap",
+      "TWAP": "Twap",
+      "LIMIT": "Limit"
+    },
+    "POOL": {
+      "TITLE": "Pool",
+      "LIQUIDITY_POOLS": "Liquidity Pools",
+      "LIQUIDITY_POSITIONS": "Liquidity Positions",
+      "IMPORT_POOL": "Import Pool"
+    },
+    "EXPLORE": "Explore",
+    "BRIDGE": "Bridge",
+    "ORBITAL": "Orbital"
+  },
+  "ORDERS": {
+    "BOX": {
+      "TITLE": [
+        "Market",
+        "Current Price",
+        "Limit Price",
+        "Quantity",
+        "Progress",
+        "Date & Time"
+      ]
+    }
+  }
+}

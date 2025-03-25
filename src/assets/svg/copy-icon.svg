@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" height="100%" viewBox="0 0 16 15" version="1.1" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Copy</title>
+  <g id="Framework" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g transform="translate(-1589, -20)" fill="none" id="Overlays" stroke="var(--appMediumGray)" stroke-width="1.5">
+      <g id="Side-Panel" transform="translate(917, 0)">
+        <g id="Events" transform="translate(273, 0)">
+          <g id="Error-Style" transform="translate(20, 17)">
+            <g id="Actions" transform="translate(379, 3)">
+              <g id="Regular" transform="translate(0, 0)">
+                <rect id="Rectangle-Copy-10" x="4.90789474" y="0.75" width="9.55263158" height="9.55263158" rx="3">
+                </rect>
+                <rect id="Rectangle" x="0.75" y="3.90789474" width="10.3421053" height="10.3421053" rx="3"></rect>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
